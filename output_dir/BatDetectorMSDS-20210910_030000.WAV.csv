@@ -62,7 +62,7 @@ start_time,end_time,low_freq,high_freq,detection_confidence,event,input_file
 258.3155,258.3265,24609.0,31268.0,0.639,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 258.8635,258.8733,24609.0,30445.0,0.553,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 259.0915,259.1035,23750.0,31112.0,0.613,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
-414.5968896,414.8041472,17670.76,49011.86,0.27122910171789955,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
+414.6529024,414.836608,19030.01,47084.99,0.26752815180799244,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 427.9735,427.9842,34062.0,40657.0,0.501,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 463.4505,463.4713,21171.0,27359.0,0.572,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 463.6155,463.6324,22031.0,28389.0,0.548,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
@@ -391,7 +391,7 @@ start_time,end_time,low_freq,high_freq,detection_confidence,event,input_file
 707.8705,707.891,21171.0,27846.0,0.585,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 709.1475,709.1684,20312.0,26326.0,0.504,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 708.066944,708.311168,14328.0,38290.5,0.2645312192173192,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
-708.528256,708.799616,14430.35,38290.5,0.2793713755964049,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
+708.5288704,708.801664,14328.0,33399.179999999986,0.2769776015366443,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 709.5951616,709.8467584,14138.69,31768.739999999994,0.2563363462765917,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 710.907008,711.2064256,14328.0,29911.5,0.2578195655070594,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 726.5015,726.5129,24609.0,31793.0,0.57,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
@@ -484,7 +484,7 @@ start_time,end_time,low_freq,high_freq,detection_confidence,event,input_file
 732.594176,732.8477184,14328.0,33399.179999999986,0.2767920914368424,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 732.878848,733.131776,14368.94,43181.81999999999,0.2764280871241381,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 733.47328,733.702144,14328.0,38290.5,0.2739462999805461,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
-733.6909824,733.9782144,14328.0,30138.3,0.2753714707527261,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
+733.68576,733.9466752,14328.0,33399.179999999986,0.2764386936656335,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 744.9350144,745.1094016,14116.98,52959.2,0.37448729114533796,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 747.3739776,747.5320832,16007.88,49604.738,0.28176286605769346,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 750.1605,750.1779,20312.0,25199.0,0.563,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
@@ -1047,7 +1047,7 @@ start_time,end_time,low_freq,high_freq,detection_confidence,event,input_file
 979.9865,980.0023,22031.0,27332.0,0.554,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 980.4325,980.4464,21171.0,27524.0,0.573,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 967.4412032,967.6173312,19762.8,49011.86,0.2657423179149818,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
-967.7975552,967.9853568,16831.64,46442.7,0.2659294646254337,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
+967.7539328,967.9483904,19030.01,46442.7,0.25741106416445564,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 967.9798272,968.167424,19762.8,46442.7,0.27416047696954493,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 993.3505,993.3655,23750.0,27862.0,0.55,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 998.0585,998.074,22031.0,27641.0,0.534,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
@@ -1475,7 +1475,7 @@ start_time,end_time,low_freq,high_freq,detection_confidence,event,input_file
 1167.3965,1167.4127,21171.0,26487.0,0.585,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1168.5255,1168.5352,22890.0,30213.0,0.636,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1168.9805,1168.9941,21171.0,27536.0,0.603,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
-1152.2650624,1152.463104,19762.8,52865.6,0.28276538702869974,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
+1152.2753024,1152.470272,19762.8,51581.02,0.28426759926922174,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1171.2335,1171.2506,21171.0,26576.0,0.53,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1175.9575,1175.9737,22031.0,26967.0,0.629,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1177.0905,1177.1039,23750.0,28244.0,0.604,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
@@ -1615,6 +1615,7 @@ start_time,end_time,low_freq,high_freq,detection_confidence,event,input_file
 1319.4905,1319.5036,25468.0,34382.0,0.624,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1319.7985,1319.8144,23750.0,31438.0,0.542,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1317.7792768,1317.9535616,19219.32,52865.6,0.26904711516442553,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
+1319.0357248,1319.3484544,14328.0,30138.3,0.25744817534307735,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1320.0665,1320.0818,22890.0,30150.0,0.591,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1320.1875,1320.2034,24609.0,29879.0,0.58,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1320.2965,1320.3081,25468.0,32103.0,0.596,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
@@ -1875,7 +1876,7 @@ start_time,end_time,low_freq,high_freq,detection_confidence,event,input_file
 1409.7645,1409.782,24609.0,41216.0,0.548,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1409.9855,1410.001,23750.0,38053.0,0.563,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1407.9719936,1408.1731072,19762.8,51581.02,0.3142471752588122,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
-1408.039168,1408.3117568,14328.0,39920.939999999995,0.28171862912744644,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
+1408.043264,1408.3123712,14328.0,44812.25999999999,0.28389561829651655,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1410.2535,1410.2693,23750.0,38043.0,0.599,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1410.3765,1410.3926,23750.0,28726.0,0.614,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1410.5005,1410.5146,23750.0,35392.0,0.577,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
@@ -2219,10 +2220,10 @@ start_time,end_time,low_freq,high_freq,detection_confidence,event,input_file
 1468.8555,1468.8671,23750.0,28977.0,0.587,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1469.0025,1469.0164,24609.0,31186.0,0.536,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1469.1675,1469.1815,23750.0,30421.0,0.55,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
-1440.5435392,1440.8196096,14328.0,46442.7,0.308218822319862,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
+1440.5341184,1440.7907328,14328.0,46442.7,0.3202876814376919,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1443.3583104,1443.5024896,16007.88,49604.738,0.2825566505823233,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1446.2316544,1446.371328,15679.140000000001,53240.0,0.28996172316606433,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
-1455.755264,1456.0196608,14328.0,46442.7,0.2785355814141038,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
+1455.7934592,1456.0258048,14348.47,44812.25999999999,0.2772612456629301,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1470.2185,1470.2298,27187.0,32609.0,0.604,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1470.6145,1470.6283,24609.0,29747.0,0.595,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1470.9185,1470.9331,24609.0,35311.0,0.628,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
@@ -2780,7 +2781,6 @@ start_time,end_time,low_freq,high_freq,detection_confidence,event,input_file
 1619.3775,1619.3838,40078.0,64723.0,0.582,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1619.4885,1619.4963,40078.0,61434.0,0.542,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1619.8135,1619.825,25468.0,31595.0,0.563,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
-1592.989056,1593.2026624,19762.8,52865.6,0.2698200143333267,Feeding Buzz,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1620.0715,1620.0781,43515.0,57688.0,0.589,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1620.1625,1620.1792,25468.0,30158.0,0.507,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
 1620.1675,1620.174,42656.0,67880.0,0.517,Echolocation,/Users/adityakrishna/Downloads/20210910_030000.WAV
