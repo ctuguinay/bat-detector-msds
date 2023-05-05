@@ -12,7 +12,7 @@ from matplotlib.patches import Rectangle
 import datetime as dt
 from pathlib import Path
 
-# set python path to correctly use batdeteect2 submodule
+# set python path to correctly use batdetect2 submodule
 import sys
 sys.path.append(os.getcwd())
 sys.path.append(os.path.join(os.getcwd(), "src/models/bat_call_detector/batdetect2/"))
@@ -192,7 +192,7 @@ def run_models(file_mappings, cfg, csv_name):
 
 def run_subsampling_pipeline(input_dir, cycle_length, percent_on, csv_name, output_dir, tmp_dir):
     cfg = get_params(output_dir, tmp_dir, 4, 30.0)
-    summer_audio_files = list(Path(input_dir).iterdir())
+    summer_audio_files = sorted(list(Path(input_dir).iterdir()))
     segmented_file_paths = generate_segmented_paths(summer_audio_files, cfg)
 
     ## Get file paths specific to our subsampling parameters
