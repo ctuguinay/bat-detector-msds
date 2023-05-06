@@ -120,10 +120,6 @@ def generate_segments(audio_file: Path, output_dir: Path, start_time: float, dur
     for sub_start in range(ip_start, ip_end, ip_duration):
         sub_end = np.minimum(sub_start + ip_duration, ip_end)
 
-        sub_length = sub_end - sub_start
-        ip_audio.seek(sub_start)
-        op_audio = ip_audio.read(sub_length)
-
         # For file names, convert back to seconds 
         op_file = os.path.basename(audio_file.name).replace(" ", "_")
         start_seconds =  sub_start / sampling_rate
@@ -136,8 +132,13 @@ def generate_segments(audio_file: Path, output_dir: Path, start_time: float, dur
             "audio_file": op_path, 
             "offset":  start_time + (sub_start/sampling_rate),
         })
-        
-        sf.write(op_path, op_audio, sampling_rate, subtype='PCM_16') 
+        if (os.path.exists(op_path) == False):
+            sub_length = sub_end - sub_start
+            ip_audio.seek(sub_start)
+            op_audio = ip_audio.read(sub_length)
+            sf.write(op_path, op_audio, sampling_rate, subtype='PCM_16')
+        else:
+            print("File exists")
 
     return output_files 
 
@@ -194,18 +195,17 @@ def run_subsampling_pipeline(input_dir, cycle_length, percent_on, csv_name, outp
     cfg = get_params(output_dir, tmp_dir, 4, 30.0)
     summer_audio_files = sorted(list(Path(input_dir).iterdir()))
     segmented_file_paths = generate_segmented_paths(summer_audio_files, cfg)
-    print(len(segmented_file_paths))
-    # ## Get file paths specific to our subsampling parameters
-    # if (percent_on < 1.0):
-    #     necessary_paths = subsample_withpaths(segmented_file_paths, cfg, cycle_length, percent_on)
-    # else:
-    #     necessary_paths = segmented_file_paths
+    
+    ## Get file paths specific to our subsampling parameters
+    if (percent_on < 1.0):
+        necessary_paths = subsample_withpaths(segmented_file_paths, cfg, cycle_length, percent_on)
+    else:
+        necessary_paths = segmented_file_paths
 
-    # file_path_mappings = initialize_mappings(necessary_paths, cfg)
-    # print(len(file_path_mappings))
-    # bd_dets = run_models(file_path_mappings, cfg, csv_name)
+    file_path_mappings = initialize_mappings(necessary_paths, cfg)
+    bd_dets = run_models(file_path_mappings, cfg, csv_name)
 
-    # return bd_dets
+    return bd_dets
 
 def parse_args():
     """
