@@ -194,7 +194,7 @@ def run_subsampling_pipeline(input_dir, cycle_length, percent_on, csv_name, outp
     cfg = get_params(output_dir, tmp_dir, 4, 30.0)
     summer_audio_files = sorted(list(Path(input_dir).iterdir()))
     segmented_file_paths = generate_segmented_paths(summer_audio_files, cfg)
-    print(segmented_file_paths)
+    print(len(segmented_file_paths))
     # ## Get file paths specific to our subsampling parameters
     # if (percent_on < 1.0):
     #     necessary_paths = subsample_withpaths(segmented_file_paths, cfg, cycle_length, percent_on)
