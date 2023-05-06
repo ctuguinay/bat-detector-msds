@@ -132,13 +132,12 @@ def generate_segments(audio_file: Path, output_dir: Path, start_time: float, dur
             "audio_file": op_path, 
             "offset":  start_time + (sub_start/sampling_rate),
         })
+        
         if (os.path.exists(op_path) == False):
             sub_length = sub_end - sub_start
             ip_audio.seek(sub_start)
             op_audio = ip_audio.read(sub_length)
             sf.write(op_path, op_audio, sampling_rate, subtype='PCM_16')
-        else:
-            print("File exists")
 
     return output_files 
 
