@@ -52,13 +52,12 @@ def plt_msds_fromdf(location, filename, df, audio_sec, fs, offset, reftimes, tim
 
     ## Find x-axis tick locations from all available seconds and convert to samples
     s_ticks = seconds[idx]-times[0]
-    s_ticks
 
     ## Calculate detection parameters from msds output to use for drawing rectangles
     xs_inds, xs_freqs, x_durations, x_bandwidths, det_labels = get_msds_params_from_df(df, reftimes[0]+times)
 
     ## Create figure
-    plt.figure(figsize=(12, 3))
+    plt.figure(figsize=(16, 4))
     plt.title(f"{file_dt.date()} in {location} | {cycle_length//60}-min, {100*p_on:.1f}% Duty Cycle")
 
     ## Plotting Spectrogram with MSDS outputs overlayed
@@ -78,6 +77,14 @@ def plt_msds_fromdf(location, filename, df, audio_sec, fs, offset, reftimes, tim
                         linewidth=1, edgecolor='y', facecolor='none')
         if (np.floor((xs_inds[i]+x_durations[i])*fs).astype('int32') < len(audio_sec) and audio_sec[np.floor((xs_inds[i]+x_durations[i])*fs).astype('int32')] != 0):
             ax.add_patch(rect)
+    for tick in sec_labels:
+        if (p_on < 1.0 and tick%cycle_length == 0):
+            rect = Rectangle((tick-reftimes[0], 0), width=int(p_on*cycle_length), height=4000, linewidth=1, edgecolor='yellow', facecolor='yellow')
+            ax.add_patch(rect)
+        if (p_on == 1.0 and tick%(reftimes[1] - reftimes[0]) == 0):
+            rect = Rectangle((tick-reftimes[0], 0), width=int((reftimes[1] - reftimes[0])), height=4000, linewidth=1, edgecolor='yellow', facecolor='yellow')
+            ax.add_patch(rect)
+
     plt.gcf().autofmt_xdate()
 
     plt.tight_layout()
