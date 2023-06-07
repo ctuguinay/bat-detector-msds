@@ -37,12 +37,13 @@ def plt_msds_fromdf(location, filename, df, audio_sec, fs, offset, reftimes, tim
     ## Strip the datetime for year, month, date, and hour from filename
     hour = int(filename[9:11])
     if (show_PST):
-        if (hour > 7):
+        if (hour >= 7):
             hour = hour - 7
         else:
             hour = 24 + hour - 7
     zero_pad_hour = str(hour).zfill(1)
     file_dt = dt.datetime.strptime(f'{filename[:9]}{zero_pad_hour}{int(offset/60)%60}{int(offset%60)}', '%Y%m%d_%H%M%S')
+    print(file_dt)
 
     ## Only find numPoints amount of labels from all available seconds
     numPoints = 11
